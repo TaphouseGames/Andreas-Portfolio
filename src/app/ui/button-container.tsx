@@ -18,7 +18,6 @@ const Button = ({
       <Tilt
         options={{
           scale: 1.1,
-          //   perspective: 7000,
           reverse: true,
         }}
       >
