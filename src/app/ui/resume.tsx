@@ -1,4 +1,3 @@
-import exp from "constants";
 import ExperienceRow from "./experience-row";
 import {
   Accordion,
@@ -7,8 +6,7 @@ import {
   AccordionTrigger,
 } from "./shadcn/accordion";
 
-import { experiences } from "../lib/utils/constants";
-import { ExperienceObject } from "../lib/utils/constants";
+import { ExperienceObject, experiences } from "../lib/utils/constants";
 
 const ResumeItem = ({
   experience,
