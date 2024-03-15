@@ -58,10 +58,16 @@ const ButtonContainer = () => {
         url="https://crookedblackheart.itch.io/"
         logo="/assets/logos/itch.png"
       />
+
       <Button
         text={"Dance Floor Shader Code"}
         url="https://godotshaders.com/shader/dance-floor-shader/"
         logo="/assets/logos/godot.webp"
+      />
+      <Button
+        text={"Portfolio Source Code"}
+        url="https://github.com/TaphouseGames/Andreas-Portfolio"
+        logo="/assets/logos/github.png"
       />
     </div>
   );
