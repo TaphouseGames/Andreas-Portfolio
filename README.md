@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to my personal portfolio website! This platform is a showcase of my skills, projects, and professional journey in the world of software engineering and game development. 
+Welcome to my personal portfolio website! A showcase of my skills, projects, and professional journey in the world of software engineering and game development. 
 
 ## Technologies Used
 
