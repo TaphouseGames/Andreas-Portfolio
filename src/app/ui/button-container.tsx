@@ -14,7 +14,7 @@ const Button = ({
   logo: string;
 }) => {
   return (
-    <div className="pt-6 h-full">
+    <div className="pt-4 h-full">
       <Tilt
         options={{
           scale: 1.1,
@@ -41,7 +41,7 @@ const Button = ({
 
 const ButtonContainer = () => {
   return (
-    <div className="my-6">
+    <div className="my-4">
       <Button
         text={"LinkedIn"}
         url="https://www.linkedin.com/in/andreas-freiburg-79911878/"
@@ -72,6 +72,11 @@ const ButtonContainer = () => {
         text={"Andreas Freiburg chatbot"}
         url="https://andreas-freiburg-chatbot.vercel.app"
         logo="/assets/logos/chatbot.jpg"
+      />
+      <Button
+        text={"Taphouse Games"}
+        url="https://www.taphouse.games/"
+        logo="/assets/logos/beerbarrel.png"
       />
     </div>
   );
