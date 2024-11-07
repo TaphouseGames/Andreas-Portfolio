@@ -8,19 +8,20 @@ export interface ExperienceObject {
   logo: string;
   title: string;
   description: string[];
-  startDate: Date;
-  endDate: Date | "Present";
+  startDate?: Date; // Optional, if using dateRanges instead
+  endDate?: Date | "Present"; // Optional, if using dateRanges instead
+  dateRanges?: { start: Date; end: Date | "Present" }[]; // Array of date ranges
 }
 
 export let experiences: ExperienceObject[] = [
   {
     company: "Taphouse Games LLC",
     logo: "/assets/logos/taphouse.png",
-    title: "Founder, Game Developer, Freelance Developer",
+    title: "Game Developer, Freelance Developer",
     description: [
-      "Provide specialized skills using full tech stack on contractual basis, combining creativity with technical expertise to assist clients in accomplishing their web development objectives while adhering to budget and timeline limitations",
-      "Developing top-down game using Godot game engine and GDscript, with demo available on <a href='https://store.steampowered.com/app/2320890/Midnight_at_the_Disco/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>Steam</a>",
-      "Working on wide range of tasks including networking, pathfinding with steering behaviors and AI with behavior trees",
+      "Delivered web development projects on time and within budget, leveraging full tech stack to meet client objectives, including the successful launch of <a href='https://www.memorycollect.com/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>MemoryCollect.com</a>",
+      "Released demo of top-down game on <a href='https://store.steampowered.com/app/2320890/Midnight_at_the_Disco/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>Steam</a> gaining positive user feedback, with full release coming soon",
+      "Enhanced game functionality and user experience by implementing complex features such as shaders, and AI with behavior trees",
     ],
     startDate: new Date(2021, 5),
     endDate: "Present",
@@ -30,20 +31,25 @@ export let experiences: ExperienceObject[] = [
     logo: "/assets/logos/sofi.png",
     title: "Senior Software Engineer",
     description: [
-      "Contributed engineering expertise in development of front-facing web application used by thousands",
-      "Developed and designed both front-end and back-end system architectures",
-      "Worked closely with large team of engineers, designers, project managers and marketers to ensure system met all requirements",
+      "Enhanced system efficiency and scalability by developing and designing both front-end and back-end architectures",
+      "Facilitated successful project delivery by collaborating closely with large team of engineers, designers, and project managers",
+      "Improved communication between front-end and back-end systems by developing and implementing RESTful APIs",
+      "Played key role in adoption of best practices in test automation and unit testing, ensuring high standards of quality and reliability",
+      "Rejoined SoFi in August 2024, continuing to drive impactful improvements",
     ],
-    startDate: new Date(2016, 1),
-    endDate: new Date(2021, 5),
+    dateRanges: [
+      { start: new Date(2016, 1), end: new Date(2021, 5) },
+      { start: new Date(2024, 7), end: "Present" },
+    ],
   },
   {
     company: "Geomonkey Inc/ Skyyfish",
     logo: "/assets/logos/skyyfish.jpg",
     title: "Software Engineer",
     description: [
-      "Assisted in design and development of ground control system for drones",
-      "Developed highly responsive and multi-platform app in Java, HTML, CSS, and Javascript",
+      "Improved user experience through development of highly responsive, multi-platform app in Java, HTML, CSS, and JavaScript",
+      "Enhanced system usability by contributing to the design and development of a ground control system",
+      "Increased software reliability and performance through hands-on testing with real drones in a simulated work environment",
     ],
     startDate: new Date(2015, 4),
     endDate: new Date(2016, 0),
@@ -54,8 +60,8 @@ export let experiences: ExperienceObject[] = [
     title: "Game Designer/Programmer, iOS developer",
     description: [
       "Designed and implemented educational game using Unity, which is available on <a href='https://store.steampowered.com/app/686660/The_Mice_of_Riddle_Place_The_Incident_of_Izzy_Ramirez/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>Steam</a>",
-      "Developed educational iPad application in Swift, Objective-C, xCode, and Core Data",
-      "Worked with small team of artists and programmers",
+      "Developed iPad application using OSX/iOS native code, which was utilized in classrooms to teach kids about history",
+      "Fostered effective collaboration within small team of artists and programmers",
     ],
     startDate: new Date(2013, 8),
     endDate: new Date(2015, 4),

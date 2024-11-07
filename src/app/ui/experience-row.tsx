@@ -23,11 +23,30 @@ const ExperienceRow = ({ experience }: { experience: ExperienceObject }) => {
           <div className="flex flex-row items-center pl-4">
             <CalendarDaysIcon className="w-6" />
             <div className="px-2">
-              {experience.startDate.toLocaleDateString(undefined, dateOptions)}{" "}
-              -{" "}
-              {experience.endDate instanceof Date
-                ? experience.endDate.toLocaleDateString(undefined, dateOptions)
-                : experience.endDate}
+              {experience.dateRanges ? (
+                experience.dateRanges.map((range, index) => (
+                  <div key={index} className="flex items-center">
+                    {range.start.toLocaleDateString(undefined, dateOptions)} -{" "}
+                    {range.end instanceof Date
+                      ? range.end.toLocaleDateString(undefined, dateOptions)
+                      : range.end}
+                  </div>
+                ))
+              ) : (
+                <>
+                  {experience.startDate?.toLocaleDateString(
+                    undefined,
+                    dateOptions
+                  )}{" "}
+                  -{" "}
+                  {experience.endDate instanceof Date
+                    ? experience.endDate.toLocaleDateString(
+                        undefined,
+                        dateOptions
+                      )
+                    : experience.endDate}
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -39,10 +58,30 @@ const ExperienceRow = ({ experience }: { experience: ExperienceObject }) => {
         <div className="flex items-center pt-2">
           <CalendarDaysIcon className="w-6" />
           <div className="px-2">
-            {experience.startDate.toLocaleDateString(undefined, dateOptions)} -{" "}
-            {experience.endDate instanceof Date
-              ? experience.endDate.toLocaleDateString(undefined, dateOptions)
-              : experience.endDate}
+            {experience.dateRanges ? (
+              experience.dateRanges.map((range, index) => (
+                <div key={index} className="flex items-center">
+                  {range.start.toLocaleDateString(undefined, dateOptions)} -{" "}
+                  {range.end instanceof Date
+                    ? range.end.toLocaleDateString(undefined, dateOptions)
+                    : range.end}
+                </div>
+              ))
+            ) : (
+              <>
+                {experience.startDate?.toLocaleDateString(
+                  undefined,
+                  dateOptions
+                )}{" "}
+                -{" "}
+                {experience.endDate instanceof Date
+                  ? experience.endDate.toLocaleDateString(
+                      undefined,
+                      dateOptions
+                    )
+                  : experience.endDate}
+              </>
+            )}
           </div>
         </div>
       </div>
