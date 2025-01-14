@@ -15,18 +15,6 @@ export interface ExperienceObject {
 
 export let experiences: ExperienceObject[] = [
   {
-    company: "Taphouse Games LLC",
-    logo: "/assets/logos/taphouse.png",
-    title: "Game Developer, Freelance Developer",
-    description: [
-      "Delivered web development projects on time and within budget, leveraging full tech stack to meet client objectives, including the successful launch of <a href='https://www.memorycollect.com/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>MemoryCollect.com</a>",
-      "Released demo of top-down game on <a href='https://store.steampowered.com/app/2320890/Midnight_at_the_Disco/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>Steam</a> gaining positive user feedback, with full release coming soon",
-      "Enhanced game functionality and user experience by implementing complex features such as shaders, and AI with behavior trees",
-    ],
-    startDate: new Date(2021, 5),
-    endDate: "Present",
-  },
-  {
     company: "SoFi",
     logo: "/assets/logos/sofi.png",
     title: "Senior Software Engineer",
@@ -41,6 +29,18 @@ export let experiences: ExperienceObject[] = [
       { start: new Date(2016, 1), end: new Date(2021, 5) },
       { start: new Date(2024, 7), end: "Present" },
     ],
+  },
+  {
+    company: "Taphouse Games LLC",
+    logo: "/assets/logos/taphouse.png",
+    title: "Game Developer, Freelance Developer",
+    description: [
+      "Delivered web development projects on time and within budget, leveraging full tech stack to meet client objectives, including the successful launch of <a href='https://www.memorycollect.com/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>MemoryCollect.com</a>",
+      "Released game on <a href='https://store.steampowered.com/app/2320890/Midnight_at_the_Disco/' class='text-tertiary hover:underline' target='_blank' rel='noopener noreferrer'>Steam</a> with positive reviews",
+      "Enhanced game functionality and user experience by implementing complex features such as shaders, and AI with behavior trees",
+    ],
+    startDate: new Date(2021, 5),
+    endDate: "Present",
   },
   {
     company: "Geomonkey Inc/ Skyyfish",
